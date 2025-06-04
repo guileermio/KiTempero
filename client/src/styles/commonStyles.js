@@ -1,3 +1,5 @@
+// client/src/styles/commonStyles.js
+
 import { StyleSheet } from "react-native";
 
 const commonStyles = StyleSheet.create({
@@ -5,7 +7,7 @@ const commonStyles = StyleSheet.create({
     flex: 1,
     padding: 28,
     backgroundColor: "#FFFFFF",
-    justifyContent: "center",
+    justifyContent: "flex-start",  // Removido “center” para que formulário não fique centralizado verticalmente
   },
   input: {
     borderWidth: 1,
@@ -14,7 +16,7 @@ const commonStyles = StyleSheet.create({
     color: "#212121",
     padding: 18,
     marginVertical: 12,
-    borderRadius: 16, // Aumentado
+    borderRadius: 16,
     fontSize: 16,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
@@ -26,7 +28,7 @@ const commonStyles = StyleSheet.create({
     backgroundColor: "#D32F2F",
     padding: 18,
     marginVertical: 14,
-    borderRadius: 20, // Mais arredondado
+    borderRadius: 20,
     alignItems: "center",
     shadowColor: "#D32F2F",
     shadowOffset: { width: 0, height: 4 },
@@ -48,7 +50,7 @@ const commonStyles = StyleSheet.create({
     fontWeight: "500",
   },
   title: {
-    fontSize: 32, // Aumentado
+    fontSize: 32,
     fontWeight: "800",
     marginBottom: 28,
     textAlign: "center",
@@ -68,7 +70,7 @@ const commonStyles = StyleSheet.create({
   menuItemContainer: {
     flexDirection: "row",
     marginBottom: 24,
-    borderRadius: 24, // Altamente arredondado
+    borderRadius: 24,
     overflow: "hidden",
     backgroundColor: "#FFFFFF",
     shadowColor: "#000",
@@ -78,8 +80,8 @@ const commonStyles = StyleSheet.create({
     elevation: 3,
   },
   menuItemImage: {
-    width: 120, // Aumentado
-    height: 120, // Aumentado
+    width: 120,
+    height: 120,
     backgroundColor: "#F5F5F5",
     borderTopLeftRadius: 24,
     borderBottomLeftRadius: 24,
@@ -90,7 +92,7 @@ const commonStyles = StyleSheet.create({
     justifyContent: "space-between",
   },
   menuItemName: {
-    fontSize: 20, // Aumentado
+    fontSize: 20,
     fontWeight: "700",
     color: "#212121",
     marginBottom: 6,
@@ -102,7 +104,7 @@ const commonStyles = StyleSheet.create({
     lineHeight: 22,
   },
   menuItemPrice: {
-    fontSize: 20, // Aumentado
+    fontSize: 20,
     fontWeight: "800",
     color: "#D32F2F",
     marginBottom: 12,
@@ -111,7 +113,7 @@ const commonStyles = StyleSheet.create({
     backgroundColor: "rgba(211, 47, 47, 0.1)",
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 16, // Mais arredondado
+    borderRadius: 16,
     alignSelf: "flex-start",
     borderWidth: 1.5,
     borderColor: "#D32F2F",
@@ -120,6 +122,59 @@ const commonStyles = StyleSheet.create({
     color: "#D32F2F",
     fontSize: 15,
     fontWeight: "700",
+  },
+  // --------------------------------------------------------------------
+  // Novos estilos para botões de Logout, Criar e Voltar
+  squareButton: {
+    backgroundColor: "#D32F2F",
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 8,
+    elevation: 3,
+  },
+  squareButtonText: {
+    color: "#FFFFFF",
+    fontSize: 15,
+    fontWeight: "600",
+  },
+  // --------------------------------------------------------------------
+  // Estilos para ManageItemsScreen
+  manageHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 16,
+  },
+  manageTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#212121",
+  },
+  listItemContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: 12,
+    borderBottomWidth: 1,
+    borderColor: "#DDDDDD",
+  },
+  listItemText: {
+    fontSize: 18,
+    color: "#212121",
+  },
+  smallButton: {
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    backgroundColor: "#FF5722",
+    marginLeft: 8,
+  },
+  smallButtonText: {
+    color: "#FFF",
+    fontSize: 14,
   },
 });
 
